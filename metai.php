@@ -5,32 +5,28 @@ if(isset($_POST['yy'])) {
     $sk = ($yy-4) % 60+1;
     $skc = ($sk+10)%10;
     switch ($skc) {
-        case "1":
+        case 1:
+        case 2:
             $spalva = "žali";
             break;
-        case "2":
-            $spalva = "žali";
-            break;
-        case "3":
-            $spalva = "raudoni";
-            break;
-        case "4":
+        case 3:
+        case 4:
              $spalva = "raudoni";
              break;
-        case "5":
+        case 5:
+        case 6:
             $spalva = "geltoni";
             break;
-        case "6":
-            $spalva = "geltoni";
-            break;
-        case "7":
+        case 7:
+        case 8:
             $spalva = "balti";
             break;
-        case "8":
-            $spalva = "balti";
+        case 0:
+        case 9:
+            $spalva = "juodi";
             break;
         default:
-            $spalva = "juodi";;
+            $spalva = "nežinoma";;
     }
 
 
