@@ -26,7 +26,7 @@ if(isset($_POST['yy'])) {
             $spalva = "juodi";
             break;
         default:
-            $spalva = "nežinoma";;
+            $spalva = "nežinomi";
     }
 
 
